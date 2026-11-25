@@ -32,11 +32,11 @@ void ADC_DMA_Callback()
     ADC_raw_ntc = ADCDataDMA[4];
     ADC_raw_temp = ADCDataDMA[3];
     ADC_raw_volts = ADCDataDMA[0];
-    ADC_raw_current = ADCDataDMA[1];
+    ADC_raw_current = 0;
   #else
     ADC_raw_temp = ADCDataDMA[3];
     ADC_raw_volts = ADCDataDMA[0];
-    ADC_raw_current = ADCDataDMA[1];
+    ADC_raw_current = 0;
   #endif
 #endif
 }
