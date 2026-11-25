@@ -90,7 +90,7 @@ void ADC_Init(void)
     adc_base_struct.ordinary_channel_length = 5;
     adc_base_config(ADC1, &adc_base_struct);
     adc_ordinary_channel_set(ADC1, VOLTAGE_ADC_CHANNEL, 1, ADC_SAMPLETIME_28_5);
-    adc_ordinary_channel_set(ADC1, CURRENT_ADC_CHANNEL, 2, ADC_SAMPLETIME_28_5);
+    adc_ordinary_channel_set(ADC1, ADC_CHANNEL_17, 2, ADC_SAMPLETIME_28_5);
     adc_ordinary_channel_set(ADC1, ADC_CHANNEL_17, 3, ADC_SAMPLETIME_28_5);
     adc_ordinary_channel_set(ADC1, TEMP_ADC_CHANNEL, 4, ADC_SAMPLETIME_239_5);
     adc_ordinary_channel_set(ADC1, NTC_ADC_CHANNEL, 5, ADC_SAMPLETIME_28_5);
@@ -98,7 +98,7 @@ void ADC_Init(void)
     adc_base_struct.ordinary_channel_length = 4;
     adc_base_config(ADC1, &adc_base_struct);
     adc_ordinary_channel_set(ADC1, VOLTAGE_ADC_CHANNEL, 1, ADC_SAMPLETIME_28_5);
-    adc_ordinary_channel_set(ADC1, CURRENT_ADC_CHANNEL, 2, ADC_SAMPLETIME_28_5);
+    adc_ordinary_channel_set(ADC1, ADC_CHANNEL_17, 2, ADC_SAMPLETIME_28_5);
     adc_ordinary_channel_set(ADC1, ADC_CHANNEL_17, 3, ADC_SAMPLETIME_28_5);
     adc_ordinary_channel_set(ADC1, TEMP_ADC_CHANNEL, 4, ADC_SAMPLETIME_239_5);
 #endif
